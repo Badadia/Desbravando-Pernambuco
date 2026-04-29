@@ -45,6 +45,36 @@ const allQuestions = [
     options: ["Bolo de Rolo", "Bolo Souza Leão", "Cartola", "Tapioca"],
     correctAnswer: 0,
   },
+  {
+    level: 1,
+    type: "text",
+    text: "Qual é o bloco recifense reconhecido pelo Guinness Book como o 'Maior Bloco de Carnaval do Mundo', que desfila no Sábado de Zé Pereira?",
+    options: [
+      "O Homem da Meia-Noite",
+      "Galo da Madrugada",
+      "Elefante de Olinda",
+      "Cordão do Bola Preta",
+    ],
+    correctAnswer: 1,
+  },
+  {
+    level: 1,
+    type: "text",
+    text: "Qual arquipélago pernambucano é um famoso santuário ecológico e um dos destinos turísticos mais cobiçados do Brasil, abrigando a Praia do Sancho?",
+    options: [
+      "Ilha de Itamaracá",
+      "Atol das Rocas",
+      "Fernando de Noronha",
+      "Ilha de Santo Aleixo",
+    ],
+    correctAnswer: 2,
+  },
+  {
+    level: 1,
+    type: "map",
+    text: "A cidade de Garanhuns é famosa pelo seu clima frio, pelo Relógio de Flores e pelo Festival de Inverno. Clique no mapa na região onde ela fica.",
+    correctAnswer: "reg-agreste",
+  },
 
   // ================= NÍVEL 2 =================
   {
@@ -92,6 +122,26 @@ const allQuestions = [
     ],
     correctAnswer: 1,
   },
+  {
+    level: 2,
+    type: "text",
+    text: "Durante o século XVII, Pernambuco foi invadido e governado por 24 anos por qual povo europeu, que deixou forte influência sob o comando de Maurício de Nassau?",
+    options: ["Franceses", "Espanhóis", "Holandeses", "Ingleses"],
+    correctAnswer: 2,
+  },
+  {
+    level: 2,
+    type: "text",
+    text: "Conhecido como o 'Rei do Baião', este genial cantor e compositor pernambucano, nascido em Exu, eternizou a música 'Asa Branca'. De quem estamos falando?",
+    options: ["Alceu Valença", "Dominguinhos", "Chico Science", "Luiz Gonzaga"],
+    correctAnswer: 3,
+  },
+  {
+    level: 2,
+    type: "map",
+    text: "A cidade de Serra Talhada é muito famosa por ser a terra natal do cangaceiro Lampião e o grande berço da dança do Xaxado. Clique no Sertão.",
+    correctAnswer: "reg-sertao",
+  },
 
   // ================= NÍVEL 3 =================
   {
@@ -137,6 +187,36 @@ const allQuestions = [
     type: "map",
     text: "Onde se localiza o poderoso 'Polo de Confecções' de Pernambuco (cidades como Santa Cruz do Capibaribe e Toritama)? Clique no mapa.",
     correctAnswer: "reg-agreste",
+  },
+  {
+    level: 3,
+    type: "text",
+    text: "O Complexo Industrial Portuário de Suape é um dos principais polos econômicos do Nordeste. Em quais municípios pernambucanos ele está localizado?",
+    options: [
+      "Recife e Olinda",
+      "Cabo de Santo Agostinho e Ipojuca",
+      "Jaboatão dos Guararapes e Moreno",
+      "Paulista e Abreu e Lima",
+    ],
+    correctAnswer: 1,
+  },
+  {
+    level: 3,
+    type: "text",
+    text: "O bairro do Alto do Moura, em Caruaru, é considerado o maior centro de artes figurativas das Américas. Isso se deve ao legado de qual grande mestre do barro?",
+    options: [
+      "Mestre Nuca",
+      "Francisco Brennand",
+      "Mestre Vitalino",
+      "J. Borges",
+    ],
+    correctAnswer: 2,
+  },
+  {
+    level: 3,
+    type: "map",
+    text: "O extremo oeste do estado abriga o 'Polo Gesseiro do Araripe', que sozinho produz mais de 90% de todo o gesso consumido no Brasil. Clique na região correta no mapa.",
+    correctAnswer: "reg-sertao",
   },
 ]
 
