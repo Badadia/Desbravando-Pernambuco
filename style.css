@@ -1,0 +1,59 @@
+body {
+  background-color: #f4f6f9;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header-bg {
+  background: linear-gradient(135deg, #0033a0, #ce181e);
+  color: white;
+  padding: 20px 0;
+  border-bottom: 5px solid #ffcc00;
+}
+
+.card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.option-btn {
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.option-btn:hover {
+  transform: scale(1.02);
+  background-color: #e9ecef;
+}
+
+#map-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #cce5ff;
+  border-radius: 10px;
+  border: 2px solid #0033a0;
+  overflow: hidden;
+}
+
+#svg-wrapper svg {
+  width: 100%;
+  height: auto;
+  min-height: 200px;
+  display: block;
+}
+
+.map-region {
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.map-region:hover {
+  opacity: 0.75;
+}
+
+.hidden {
+  display: none !important;
+}
