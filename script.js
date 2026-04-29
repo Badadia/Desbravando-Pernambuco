@@ -242,17 +242,38 @@ function checkTextAnswer(selectedIndex) {
 }
 
 function handleCorrectAnswer() {
-  alert("Correto! Muito bem.")
   score += pointsPerQuestion * activeQuestions[currentQuestionIndex].level
-  nextQuestion()
+  showFeedback(true)
 }
 
 function handleWrongAnswer() {
-  alert("Incorreto! Tente a próxima.")
-  nextQuestion()
+  showFeedback(false)
+}
+
+function showFeedback(isCorrect) {
+  const overlay = document.getElementById("feedback-overlay")
+  const title = document.getElementById("feedback-title")
+  const text = document.getElementById("feedback-text")
+  const btn = document.getElementById("btn-next-question")
+
+  if (isCorrect) {
+    title.innerHTML = "🎉 Correto!"
+    title.className = "text-success mb-3"
+    text.innerText = "Você mandou muito bem! Ganhou os pontos dessa rodada."
+    btn.className = "btn btn-success btn-lg mt-3"
+  } else {
+    title.innerHTML = "❌ Incorreto!"
+    title.className = "text-danger mb-3"
+    text.innerText = "Que pena, resposta errada! Vamos para a próxima."
+    btn.className = "btn btn-danger btn-lg mt-3"
+  }
+
+  overlay.classList.remove("hidden")
 }
 
 function nextQuestion() {
+  document.getElementById("feedback-overlay").classList.add("hidden")
+
   currentQuestionIndex++
   if (currentQuestionIndex < activeQuestions.length) {
     loadQuestion()
